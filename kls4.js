@@ -658,37 +658,32 @@ if (reversed == null) { reversed = false; }
 		mpi.click("mulaiBtn", 10);
 	}
 	this.frame_9 = function() {
-		var soal = [["书 shū", "Buku", "Pensil", "Penggaris", "Tas sekolah"],
-					["笔 bǐ", "Alat untuk menulis", "Buku", "Penggaris", "Tas sekolah"],
-					["同桌 tónɡ zhuō", "Teman semeja", "Teman sekolah", "Teman kerja", "Teman bermain"],
-					["书包 shū bāo", "Tas sekolah", "Pensil", "Penggaris", "Buku tulis"],
-					["玩具 wán jù", "Mainan", "Rumah", "Pensil", "Buku"],
-					["Buku tulis", "本子 běn zi", "书包 shū bāo", "尺子 chǐ zi", "笔 bǐ"],
-					["Penggaris", "尺子 chǐ zi", "本子 běn zi", "书包 shū bāo", "笔 bǐ"],
-					["Di", "在 zài", "家 jiā", "里 lǐ", "吗 ma"],
-					["Adik perempuan", "妹妹 mèi mei", "姐姐 jiě jie", "妈妈 mā ma", "姑姑 ɡū ɡu"],
-					["这 zhè", "Ini", "Itu", "Adalah", "Bukan"],
-					["那 nà", "Itu", "Ini", "Adalah", "Bukan"],
-					["是 shì", "Adalah / ya", "Itu", "Bukan", "Ini"],
-					["谁 shéi", "Siapa", "Apakah", "Kapan", "Apa"],
-					["Bukan", "不是 bú shì", "是 shì", "谁 shéi", "这 zhè"],
-					["Apakah", "吗 ma", "谁 shéi", "那 nà", "在 zài"],
-					["Saya", "我 wǒ", "是 shì", "他 tā", "你 nǐ"],
-					["Kamu", "你 nǐ", "我 wǒ", "是 shì", "他 tā"],
-					["他 tā", "Dia", "Adalah", "Saya", "Kamu"],
-					["老师 lǎo shī", "Guru", "Orang tua", "Kepala sekolah", "Murid"],
-					["Rumah", "家 jiā", "他 tā", "笔 bǐ", "在 zài"],
-					["Ini adalah buku saya.", "这是我的书。", "那是我的书。", "这是我的书包。", "那是我的书包。"],
-					["Itu tas sekolah siapa?", "那是谁的书包？", "这是谁的书包？", "这是谁的本子？", "那是谁的尺子？"],
-					["Apakah ini buku kamu?", "这是你的书吗？", "这是你的笔吗？", "那是你的书包吗？", "那是你的书吗？"],
-					["Itu adalah buku tulis saya.", "那是我的本子。", "那是我的笔。", "那是我的尺子。", "那是我的书。"],
-					["Apakah itu tas sekolah kamu?", "那是你的书包吗？", "那是你的书吗？", "那是谁的书包？", "那是谁的本子？"],
-					["Ini adalah tas sekolah xiao qiang.", "这是小强的书包。", "这是小华的书包。", "那是小强的书包。", "那是小华的书包。"],
-					["Itu adalah tas sekolah xiao hua.", "那是小华的书包。", "这是小强的书包。", "这是小华的书包。", "那是小强的书包。"],
-					["Ini adalah mainan adik perempuan.", "这是妹妹的玩具。", "那是妹妹的书包。", "那是姐姐的本子。", "这是妹妹的尺子。"]];
+		var soal = [["两 liǎnɡ ......", "2", "1", "3", "4"],
+					["阿姨 ā yí ......", "Bibi", "Nenek", "Paman", "Ibu"],
+					["叔叔 shū shu ......", "Paman", "Bibi", "Nenek", "Ayah"],
+					["儿子 ér zi ......", "anak laki-laki", "anak perempuan", "adik laki-laki", "adik perempuan"],
+					["女儿 nǚ ér ......", "anak perempuan", "anak laki-laki", "adik laki-laki", "adik perempuan"],
+					["Penghapus (karet) ......", "橡皮 xiànɡ pí", "本子 běn zi", "笔 bǐ", "书 shū"],
+					["Boleh ......", "可以 kě yǐ", "几 jǐ", "用 yònɡ", "有 yǒu"],
+					["Menggunakan ......", "用 yònɡ", "可以 kě yǐ", "几 jǐ", "有 yǒu"],
+					["Berapa ......", "几 jǐ", "用 yònɡ", "可以 kě yǐ", "有 yǒu"],
+					["我有两 .... 书。", "本 běn", "支 zhī", "个 gè", "块 kuài"],
+					["小强有三 .... 笔。", "支 zhī", "个 gè", "块 kuài", "本 běn"],
+					["小明有四 .... 本子。", "个 gè", "块 kuài", "本 běn", "支 zhī"],
+					["我有三 .... 妹妹。", "个 gè", "块 kuài", "本 běn", "支 zhī"],
+					["我有两 .... 橡皮。", "块 kuài", "本 běn", "支 zhī", "个 gè"],
+					["你有几 .... 书?", "本 běn", "支 zhī", "个 gè", "块 kuài"],
+					["Bibi Wang punya 1 orang anak laki-laki.", "王阿姨有一个儿子。", "王阿姨有一本书。", "陈叔叔有一个女儿。", "王叔叔有一个儿子。"],
+					["Paman Chen punya 1 orang anak perempuan.", "陈叔叔有一个女儿。", "陈叔叔有一个儿子。", "陈阿姨有一个女儿。", "陈阿姨有一个儿子。"],
+					["Kamu punya berapa buah buku?", "你有几本书？", "你有几块橡皮？", "你有几支笔？", "你有几个书包？"],
+					["Apakah kamu punya penghapus karet?", "你有橡皮吗？", "你有本子吗？", "你有铅笔吗？", "你有书包吗？"],
+					["Saya punya 2 buah buku.", "我有两本书。", "我有三本书。", "我有两个书包。", "我有三支笔。"],
+					["Ini adalah tas sekolah saya.", "这是我的书包。", "这是我的橡皮。", "我有一个书包。", "这是我的铅笔。"],
+					["Saya punya 1 orang kakak laki-laki.", "我有一个哥哥。", "我有一个姐姐。", "我有一个妹妹。", "我有一个弟弟。"],
+					["Adik perempuan punya 2 buah buku tulis.", "妹妹有两个本子。", "弟弟有两个本子。", "妹妹有四个本子。", "姐姐有五个本子。"]];
 					
 		var ob = this;
-		mpi.kuis("kuisMC", soal, 25, selesaiKuis);
+		mpi.kuis("kuisMC", soal, 20, selesaiKuis);
 		ob.kuisMC.opsi = "A";
 		ob.kuisMC.suaraBenar = "dui";
 		ob.kuisMC.suaraSalah = "cuo";
@@ -705,7 +700,7 @@ if (reversed == null) { reversed = false; }
 		mpi.startKuis();
 		
 		function selesaiKuis(){
-			mpi.popup("popupMC", "成绩", ""+ob.kuisMC.score/2.5, kembali);
+			mpi.popup("popupMC", "成绩", ""+ob.kuisMC.score/2, kembali);
 		}
 		
 		function kembali(){
@@ -760,13 +755,13 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/CachedBmp_1.png?1754228204315", id:"CachedBmp_1"},
-		{src:"images/IMG_20250430_101050.jpg?1754228204315", id:"IMG_20250430_101050"},
-		{src:"images/kls4_atlas_1.png?1754228204215", id:"kls4_atlas_1"},
-		{src:"sounds/dui.mp3?1754228204315", id:"dui"},
-		{src:"sounds/cuo.mp3?1754228204315", id:"cuo"},
-		{src:"sounds/wan.mp3?1754228204315", id:"wan"},
-		{src:"sounds/dao.mp3?1754228204315", id:"dao"}
+		{src:"images/CachedBmp_1.png?1757127657664", id:"CachedBmp_1"},
+		{src:"images/IMG_20250430_101050.jpg?1757127657664", id:"IMG_20250430_101050"},
+		{src:"images/kls4_atlas_1.png?1757127657581", id:"kls4_atlas_1"},
+		{src:"sounds/dui.mp3?1757127657664", id:"dui"},
+		{src:"sounds/cuo.mp3?1757127657664", id:"cuo"},
+		{src:"sounds/wan.mp3?1757127657664", id:"wan"},
+		{src:"sounds/dao.mp3?1757127657664", id:"dao"}
 	],
 	preloads: []
 };
